@@ -24,11 +24,11 @@ function setup() {
     noStroke()
 
 
-    if (partyIsHost()) {
-        partySetShared(shared, {
-            points: []
-        })
-    }
+    // if (partyIsHost()) {
+    partySetShared(shared, {
+        points: []
+    })
+    // }
 }
 
 function draw() {
