@@ -42,6 +42,9 @@ function draw() {
 
     if (mouseIsPressed) {
         shared.points.push({ x1: mouseX, y1: mouseY, x2: pmouseX, y2: pmouseY })
+        if (shared.points.length > 500) {
+            shared.points.splice(0, 1)
+        }
     }
 
     for (let i = 0; i < shared.points.length; i++) {
